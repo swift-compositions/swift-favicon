@@ -5,8 +5,8 @@ import PackageDescription
 let package = Package(
     name: "swift-favicon",
     platforms: [
-        .macOS("27"),
-        .iOS("27"),
+        .macOS(.v27),
+        .iOS(.v27),
     ],
     products: [
         .library(name: "Favicon", targets: ["Favicon"])
