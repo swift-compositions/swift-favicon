@@ -1,6 +1,6 @@
+import Dependencies
 import Favicon
 import Foundation
-import Dependencies
 
 // Example 1: Basic usage with minimal configuration
 let basicFavicon = Favicon(
@@ -60,7 +60,7 @@ let routes: [Favicon.Route] = [
     .appleTouchIcon(),
     .icon(.svg),
     .icon(.png(Favicon.Icon.Size(width: 16, height: 16))),
-    .icon(.png(Favicon.Icon.Size(width: 32, height: 32)))
+    .icon(.png(Favicon.Icon.Size(width: 32, height: 32))),
 ]
 
 for route in routes {

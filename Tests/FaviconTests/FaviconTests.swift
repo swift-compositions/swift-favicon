@@ -1,10 +1,10 @@
 import Dependencies
 import Dependencies_Test_Support
 import Favicon
-import Testing
 import HTTP
 import HTTP_Router
 import RFC_3986
+import Testing
 
 @Suite("Test")
 struct Test {

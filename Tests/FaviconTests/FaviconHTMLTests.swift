@@ -2,10 +2,10 @@ import Dependencies
 import Dependencies_Test_Support
 import Favicon
 import HTML
-import Testing
 import HTTP
 import HTTP_Router
 import RFC_3986
+import Testing
 
 @Suite("Markup")
 struct Markup {

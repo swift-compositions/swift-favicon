@@ -1,10 +1,10 @@
 import Dependencies
 import Dependencies_Test_Support
 import Favicon
-import Testing
 import HTTP
 import HTTP_Router
 import RFC_3986
+import Testing
 
 @Suite("Routing")
 struct Routing {
@@ -39,8 +39,9 @@ extension Routing.Integration {
         #expect(sizedRoute == .appleTouchIcon(size: .`180`))
 
         // Test precomposed
-        let precomposedRoute = try router.match(request:
-            RouteRequest.make(path: "apple-touch-icon-precomposed.png")
+        let precomposedRoute = try router.match(
+            request:
+                RouteRequest.make(path: "apple-touch-icon-precomposed.png")
         )
         #expect(precomposedRoute == .appleTouchIconPrecomposed)
     }

@@ -2,10 +2,10 @@ import Dependencies
 import Dependencies_Test_Support
 import Favicon
 import HTML
-import Testing
 import HTTP
 import HTTP_Router
 import RFC_3986
+import Testing
 
 @Suite("Readme")
 struct Readme {
@@ -113,13 +113,15 @@ extension Readme.Integration {
         let appleTouchIconRoute = try router.match(request: RouteRequest.make(path: "apple-touch-icon.png"))
         #expect(appleTouchIconRoute == .appleTouchIcon(size: nil))
 
-        let appleTouchIcon180Route = try router.match(request:
-            RouteRequest.make(path: "apple-touch-icon-180x180.png")
+        let appleTouchIcon180Route = try router.match(
+            request:
+                RouteRequest.make(path: "apple-touch-icon-180x180.png")
         )
         #expect(appleTouchIcon180Route == .appleTouchIcon(size: .`180`))
 
-        let appleTouchIconPrecomposedRoute = try router.match(request:
-            RouteRequest.make(path: "apple-touch-icon-precomposed.png")
+        let appleTouchIconPrecomposedRoute = try router.match(
+            request:
+                RouteRequest.make(path: "apple-touch-icon-precomposed.png")
         )
         #expect(appleTouchIconPrecomposedRoute == .appleTouchIconPrecomposed)
     }

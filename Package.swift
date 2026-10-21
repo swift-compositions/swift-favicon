@@ -6,7 +6,7 @@ let package = Package(
     name: "swift-favicon",
     platforms: [
         .macOS("27"),
-        .iOS("27")
+        .iOS("27"),
     ],
     products: [
         .library(name: "Favicon", targets: ["Favicon"])
